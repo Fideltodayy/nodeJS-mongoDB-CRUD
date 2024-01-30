@@ -27,5 +27,8 @@ mongoose
     "mongodb+srv://fidelotieno11:zg7f=8GMr>DvuK=@cluster0.y2nouau.mongodb.net/?retryWrites=true&w=majority" ??
       "MONGODB_URI is not defined"
   )
-  .then(() => console.log("Connected to mongodb"))
+  .then(() => {
+    mongoose.Promise = global.Promise;
+    console.log("Connected to mongodb");
+  })
   .catch((err) => console.log(err));
