@@ -19,6 +19,14 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
+// import the blog routes
+const blogRoutes = require("./routes/BlogRoutes");
+
+// use the blog routes
+app.use("/api/blogs", blogRoutes);
+
+// export the app
+
 module.exports = app;
 
 // connect to mongodb
