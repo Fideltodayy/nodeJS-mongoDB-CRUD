@@ -1,6 +1,7 @@
 I began setting up my project and installed dependancies that I was to us in my project.
 I then set up my MongoDB database and built a model using my mongoose ORM. I was to install mongoDB but chose to install mongoose as my ORM, an easier way to create schemas.
-Thereafter, I connected to my mongoDB database via mongoose, Created and defined a Blog model with a blogSchema and finally setup controllers to consume the services I created
+Thereafter, I connected to my mongoDB database via mongoose, Created and defined a Blog model with a blogSchema and finally setup controllers to consume the services I created.
+Next I created routes for the respective controllers by importing the controllers and defined the routes for each controller using the express router.
 
 ## Dependencies
 
