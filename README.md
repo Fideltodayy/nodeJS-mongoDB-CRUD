@@ -20,4 +20,8 @@ Later on, in the app.js file I added a new middleware so that my app can use the
     2.Asynchronous Javascript.
     This is the ability of JavaScript to execute multiple tasks simultaneously without blocking the execution of other tasks. This is particularly important when dealing with time-consuming operations such as making API calls, reading and writing files, or performing database queries.
 
-    3. Modularity: Breaking your code into smaller, reusable modules can make it easier to understand, test, and maintain.
+    3. Modularity:
+    Breaking your code into smaller, reusable modules can make it easier to understand, test, and maintain.
+
+    4. Testing:
+    Automated tests are crucial to every web application. They save you time that would otherwise be spent running repetitive tests to see if your code works as expected.
