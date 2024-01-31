@@ -3,11 +3,25 @@
 // import the express module
 const express = require("express");
 
+const cors = require("cors");
+
 // import the mongoose module
 const mongoose = require("mongoose");
 
 // create an object of express
 const app = express();
+
+// Enable CORS for all origins (for development)
+app.use(cors());
+
+// Or, enable CORS for specific origins (for production)
+// app.use(cors({
+//   origin: 'http://your-frontend-domain.com'
+// }));
+
+// ... your routes and other middleware
+
+app.options("*", cors());
 
 // middleware
 app.use(express.json());
