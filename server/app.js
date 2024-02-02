@@ -14,17 +14,10 @@ const app = express();
 // Enable CORS for all origins (for development)
 app.use(cors());
 
-// Or, enable CORS for specific origins (for production)
-// app.use(cors({
-//   origin: 'http://your-frontend-domain.com'
-// }));
-
-// ... your routes and other middleware
-
 app.options("*", cors());
 
 // middleware
-app.use(express.json());
+app.use(express.json()); git
 
 app.listen(3001, () => console.log("Listening on port 3001..."));
 
@@ -33,11 +26,11 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-// import the blog routes
-const blogRoutes = require("./routes/NoteRoutes");
+// import the note routes
+const noteRoutes = require("./routes/NoteRoutes");
 
-// use the blog routes
-app.use("/api/notes", blogRoutes);
+// use the note routes
+app.use("/api/notes", noteRoutes);
 
 // export the app
 
